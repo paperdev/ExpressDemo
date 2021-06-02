@@ -1,0 +1,33 @@
+{
+  "name": "ExpressDemo",
+  "version": "1.0.0",
+  "description": "Express Demo Project",
+  "main": "app.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^8.4.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "node node_modules/mocha/bin/mocha "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paperdev/ExpressDemo.git"
+  },
+  "keywords": [
+    "express",
+    "node.js",
+    "nodejs",
+    "demo",
+    "es6",
+    "paperdev"
+  ],
+  "author": "Kevin <paperdev7@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/paperdev/ExpressDemo"
+}
