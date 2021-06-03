@@ -13,10 +13,10 @@ const CPUS = os.cpus().length;
 const app = express();
 const main_server = http.createServer(app);
 
-export default function() {
+export default async function() {
     app.use(logHandler);
     app.use(errorHandler);
-    router(app);
+    await router(app);
 
     if (CONFIG.SERVER.CLUSTER && cluster.isMaster) {
         for (let i = 0; i < CPUS; i++) {

@@ -1,5 +1,5 @@
 {
-  "name": "ExpressDemo",
+  "name": "express-demo",
   "version": "1.0.0",
   "description": "Express Demo Project",
   "main": "app.js",
