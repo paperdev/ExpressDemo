@@ -1,4 +1,4 @@
-export default function(err, req, res, next){
+export default async function(err, req, res, next){
     const statusCode = err.status || 500;
 
     if (500 === statusCode) {
@@ -7,4 +7,4 @@ export default function(err, req, res, next){
     res.status(statusCode);
 
     return next(err);
-};
+}

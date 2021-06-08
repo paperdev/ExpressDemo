@@ -8,12 +8,16 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.4",
+    "@babel/plugin-syntax-top-level-await": "^7.12.13",
     "express": "^4.17.1",
     "mocha": "^8.4.0"
   },
   "scripts": {
     "start": "node app.js",
-    "test": "node node_modules/mocha/bin/mocha "
+    "test": "node node_modules/mocha/bin/mocha ",
+    "lint": "node ./node_modules/eslint/bin/eslint.js --fix ."
   },
   "repository": {
     "type": "git",
@@ -29,5 +33,8 @@
   ],
   "author": "Kevin <paperdev7@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/paperdev/ExpressDemo"
+  "homepage": "https://github.com/paperdev/ExpressDemo",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
 }

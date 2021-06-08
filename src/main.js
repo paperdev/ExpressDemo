@@ -26,7 +26,7 @@ export default async function() {
     else {
         main_server.listen(PORT);
     }
-};
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 // Http Event Listener
@@ -54,7 +54,7 @@ cluster.on('online', (worker) => {
     console.log('Worker %d is online.', worker.process.pid);
 });
 
-cluster.on('exit', (worker, code, signal) => {
+cluster.on('exit', (worker) => {
     console.log('Worker %d ended.', worker.process.pid);
     cluster.fork();
 });

@@ -1,4 +1,4 @@
-export default function(req, res, next){
+export default async function(req, res, next){
     console.log(
         'TYPE : %s URL : %s  params : %s',
         req.method,
@@ -7,4 +7,4 @@ export default function(req, res, next){
     );
 
     return next();
-};
+}
